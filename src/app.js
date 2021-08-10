@@ -33,13 +33,13 @@ let when = [
 
 function excuseGen() {
   //who
-  var subject = Math.floor(Math.random() * (who.length - 1) + 1);
+  let subject = Math.floor(Math.random() * (who.length - 1) + 1);
   //action
-  var verb = Math.floor(Math.random() * (action.length - 1) + 1);
+  let verb = Math.floor(Math.random() * (action.length - 1) + 1);
   //what
-  var complement = Math.floor(Math.random() * (what.length - 1) + 1);
+  let complement = Math.floor(Math.random() * (what.length - 1) + 1);
   //when
-  var time = Math.floor(Math.random() * (when.length - 1) + 1);
+  let time = Math.floor(Math.random() * (when.length - 1) + 1);
 
   //concatenating the array and setting into the p
   document.getElementById("excuse").innerHTML =
